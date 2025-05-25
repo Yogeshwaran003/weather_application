@@ -1,9 +1,8 @@
 // import Btn from "@/components/btn"
-import Card from "@/components/card";
+// import Card from "@/components/card";
 export default function Home() {
   return (
     <div>
-      <Card/>
     </div>
   );
 }
