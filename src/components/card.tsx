@@ -9,7 +9,7 @@ const card = (props:{place:string;temp:number}) => {
         <p className='text-[25px]'>Time</p>
       </div>
       <div className='flex justify-center text-[100px]'>
-        <h1>{props.temp}</h1>
+        <h1>{Math.round(props.temp-273.15)}°C</h1>
       </div>
       <div className='flex justify-center text-[50px]'>
         {props.place}

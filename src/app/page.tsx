@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex gap-5 m-16">
-        <input type="text" onChange={(e)=>setCity(e.target.value)} className="w-[1000px] rounded-lg"/>
+        <input type="text" onChange={(e)=>setCity(e.target.value)} className="w-[1000px] text-black p-5 rounded-lg"/>
         <div><Btn text="Enter" onClick={()=>exporting(city)}/></div>
       </div>
       <div>
