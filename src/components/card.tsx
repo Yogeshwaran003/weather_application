@@ -1,6 +1,6 @@
 import React from 'react'
 
-const card = () => {
+const card = (props:{place:string;temp:number}) => {
   return (
     <div className='flex flex-col justify-around h-[600px] w-[500px] p-5 bg-black bg-transparent backdrop-blur-[20px] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] rounded-[10px] border border-white/20  '>
       {/* <div>Weather application</div> */}
@@ -9,10 +9,10 @@ const card = () => {
         <p className='text-[25px]'>Time</p>
       </div>
       <div className='flex justify-center text-[100px]'>
-        <h1>26C</h1>
+        <h1>{props.temp}</h1>
       </div>
       <div className='flex justify-center text-[50px]'>
-        Place
+        {props.place}
       </div>
       <div className='flex justify-center text-[50px]'>
         Some Extra Feature
